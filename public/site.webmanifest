@@ -1,0 +1,11 @@
+{
+  "name": "American Sovereign Bullion",
+  "short_name": "ASB",
+  "icons": [
+    { "src": "/favicon-192-94cf0742.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon-512-94cf0742.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#10386e",
+  "background_color": "#10386e",
+  "display": "browser"
+}

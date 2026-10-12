@@ -1,0 +1,6 @@
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Private client library. Keep search engines out...
+/clients-3bc4ecc7/*
+  X-Robots-Tag: noindex, nofollow

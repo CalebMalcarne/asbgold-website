@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="asb-build" content="2026-10-01-01">
+<link rel="icon" href="/favicon-94cf0742.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32-94cf0742.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon-94cf0742.png">
+<meta name="theme-color" content="#10386e">
+<title>Research &amp; Analysis &middot; American Sovereign Bullion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#10386e; --navy-deep:#0a2552; --navy-mid:#1a4c8c; --navy-chrome:#143f7a;
+  --gold:#c9a14a; --gold-bright:#e8c46b; --gold-deep:#8a6a1f;
+  --cream:#f5efe2; --cream-soft:#e8dfc9; --ink-blue:#16263d;
+  --paper:#eef2f8; --line:rgba(20,48,90,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink-blue);font-family:'Montserrat',sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+
+.eyebrow{display:inline-flex;align-items:center;gap:.8em;font-size:16px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-bright);font-weight:700}
+.eyebrow::before,.eyebrow::after{content:"\2726";font-size:.9em;line-height:1;opacity:.92}
+.eyebrow--dark{color:var(--gold-deep)}
+
+/* ---------- TOP BAR + MENU ---------- */
+.topbar{background:var(--navy-chrome);border-bottom:2px solid var(--gold);padding:18px 20px 0;text-align:center}
+.topbar img{height:132px;width:auto;margin:0 auto}
+.menu{display:flex;flex-wrap:wrap;justify-content:center;gap:2px;margin-top:14px}
+.menu a{display:inline-block;padding:14px 20px;font-size:14.5px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:#d7e3f4;text-decoration:none;border-bottom:3px solid transparent}
+.menu a:hover{color:var(--gold-bright);border-bottom-color:var(--gold)}
+.menu .sep{width:1px;align-self:center;height:20px;background:rgba(232,196,107,.38);margin:0 10px}
+.menu a.call{color:var(--gold-bright)}
+
+/* ---------- HERO ---------- */
+.hero{background:var(--navy);background-image:linear-gradient(180deg,var(--navy-mid) 0%,var(--navy) 55%,var(--navy-deep) 100%);color:var(--cream);padding:52px 24px 46px;text-align:center}
+.hero h1{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:48px;line-height:1.08;margin:16px 0 14px}
+.hero p{max-width:640px;margin:0 auto;font-size:17.5px;color:#cfdcee}
+.rule{width:64px;height:2px;background:var(--gold);margin:24px auto 0;opacity:.85}
+
+/* ---------- SECTIONS ---------- */
+.section{padding:56px 0 8px}
+.section:last-of-type{padding-bottom:56px}
+.section-head{text-align:center;margin-bottom:34px}
+.section-head h2{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:34px;color:var(--navy);line-height:1.14;margin:14px 0 10px}
+.section-head p{max-width:580px;margin:0 auto;font-size:17.5px;color:#3c4d64}
+
+/* ---------- GRID ---------- */
+.grid{display:grid;gap:26px;grid-template-columns:repeat(3,1fr)}
+.grid--wide{grid-template-columns:repeat(2,1fr);gap:30px}
+
+.tile{display:block;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:box-shadow .18s ease,transform .18s ease}
+.tile:hover{box-shadow:0 14px 34px rgba(10,30,58,.16);transform:translateY(-3px)}
+
+/* 2:3 cover, built in CSS. No photography required. */
+.cover{position:relative;aspect-ratio:2/3;background:var(--navy);background-image:linear-gradient(155deg,var(--navy-mid) 0%,var(--navy) 48%,var(--navy-deep) 100%);display:flex;flex-direction:column;justify-content:space-between;padding:26px 22px;color:var(--cream);text-align:center;border-bottom:3px solid var(--gold)}
+.cover::after{content:"";position:absolute;inset:12px;border:1px solid rgba(232,196,107,.34);border-radius:3px;pointer-events:none}
+.cover .mark{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-bright);font-weight:700;position:relative;z-index:1}
+.cover .ct{font-family:'Cormorant Garamond',serif;font-size:29px;line-height:1.16;font-weight:600;position:relative;z-index:1;padding:0 4px}
+.cover .cd{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#a9c0dd;font-weight:600;position:relative;z-index:1}
+.cover .star{color:var(--gold);font-size:15px;margin-bottom:8px;position:relative;z-index:1}
+.grid--wide .cover{aspect-ratio:3/2;padding:34px 30px}
+.grid--wide .cover .ct{font-size:36px}
+
+.meta{padding:20px 22px 24px}
+.meta .kicker{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;margin-bottom:7px}
+.meta h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:24px;color:var(--navy);line-height:1.2;margin-bottom:8px}
+.meta p{font-size:15.5px;color:#3c4d64;line-height:1.62;margin-bottom:13px}
+.meta .go{font-size:13.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--navy-mid)}
+.tile:hover .meta .go{color:var(--gold-deep)}
+
+/* pending state */
+.tile--soon{opacity:.62;pointer-events:none;background:#f6f8fb}
+.tile--soon .cover{background:#5b6c85;background-image:linear-gradient(155deg,#6d7e97 0%,#5b6c85 55%,#4a5a72 100%);border-bottom-color:#9aa8bd}
+.tile--soon .cover .mark,.tile--soon .cover .star{color:#dfe6f0}
+.tile--soon .cover .cd{color:#c6d0de}
+.tile--soon .meta .go{color:#7a8798}
+
+/* ---------- KUDLOW BAND ---------- */
+.kband{background:var(--navy-deep);background-image:linear-gradient(120deg,var(--navy-chrome) 0%,var(--navy-deep) 62%);color:var(--cream);margin:44px 0 0;border-top:2px solid var(--gold);border-bottom:2px solid var(--gold)}
+.kband .inner{max-width:1060px;margin:0 auto;padding:38px 24px;display:grid;grid-template-columns:270px 1fr;gap:34px;align-items:center}
+.kband img{width:270px;border-radius:6px}
+.kband .q{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:26px;line-height:1.44;color:var(--cream)}
+.kband .sig{margin-top:16px;padding-top:14px;border-top:1px solid rgba(232,196,107,.4);display:inline-block}
+.kband .sig .n{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold-bright)}
+.kband .sig .r{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#b4c6de;font-weight:600;margin-top:5px}
+.kband .ftc{margin-top:16px;font-size:12.5px;color:#c6d4e8;font-weight:600}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--navy-deep);color:var(--cream-soft);border-top:2px solid var(--gold);padding:42px 24px;text-align:center}
+footer .brand{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
+footer .info{font-size:14.5px;line-height:1.85}
+footer a{color:var(--gold-bright);text-decoration:none}
+footer .legal{margin-top:24px;font-size:11.5px;color:#8399b8;line-height:1.65;max-width:720px;margin-left:auto;margin-right:auto}
+
+@media (max-width:900px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .kband .inner{grid-template-columns:1fr;text-align:center;justify-items:center}
+}
+@media (max-width:620px){
+  .grid,.grid--wide{grid-template-columns:1fr;gap:22px}
+  .grid--wide .cover{aspect-ratio:2/3}
+  .hero h1{font-size:36px}
+  .section-head h2{font-size:28px}
+  .eyebrow{font-size:14px;letter-spacing:.2em}
+  .topbar img{height:96px}
+  .menu a{padding:12px 14px;font-size:13px}
+  .cover .ct{font-size:26px}
+  .kband .q{font-size:22px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <img src="assets/asb-logo-3d-light-v1.webp" alt="American Sovereign Bullion">
+  <nav class="menu">
+    <a href="#emails">Emails</a>
+    <a href="#reports">Reports</a>
+    <a href="#guides">Guides</a>
+    <span class="sep"></span>
+    <a href="/">Home</a>
+    <a href="/gold-ira.html">Gold IRA</a>
+    <a href="/contact.html">Contact</a>
+    <a class="call" href="tel:8442722428">(844) 272-2428</a>
+  </nav>
+</div>
+
+<section class="hero">
+  <div class="eyebrow">Private Access</div>
+  <h1>Research &amp; Analysis</h1>
+  <p>A private collection of our emails, reports, and guides, kept here for you. Bookmark this page. Everything we send lands here, so you can read it again whenever you like.</p>
+  <div class="rule"></div>
+</section>
+
+<section class="section" id="emails">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow eyebrow--dark">Emails</div>
+      <h2>What We Send You</h2>
+      <p>Everything we email you lands here, so you can read it again whenever you like.</p>
+    </div>
+
+    <div class="grid">
+
+      <a class="tile" href="the-shrinking-ruler.html">
+        <div class="cover">
+          <div class="mark">Email</div>
+          <div><div class="star">&#10022;</div><div class="ct">The<br>Shrinking<br>Ruler</div></div>
+          <div class="cd">July 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">July 2026</div>
+          <h3>The Shrinking Ruler</h3>
+          <p>Why your savings can look the same on paper and still be quietly losing ground, shown three ways from the public record.</p>
+          <div class="go">Read the email &#8594;</div>
+        </div>
+      </a>
+
+      <a class="tile" href="12-red-flags/">
+        <div class="cover">
+          <div class="mark">Email</div>
+          <div><div class="star">&#10022;</div><div class="ct">12 Red Flags. One Market.</div></div>
+          <div class="cd">July 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">July 2026</div>
+          <h3>12 Red Flags. One Market. Your Savings.</h3>
+          <p>Twelve long-term measures of the stock market, and what each one is showing right now.</p>
+          <div class="go">Read the email &#8594;</div>
+        </div>
+      </a>
+
+      <a class="tile" href="kudlow-endorsement.html">
+        <div class="cover">
+          <div class="mark">Email</div>
+          <div><div class="star">&#10022;</div><div class="ct">The Only Gold Company Larry Kudlow Recommends</div></div>
+          <div class="cd">July 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">July 2026</div>
+          <h3>The Only Gold Company Larry Kudlow Recommends</h3>
+          <p>Larry Kudlow on the one gold company he puts his name behind. Larry Kudlow is a paid spokesperson for American Sovereign Bullion.</p>
+          <div class="go">Read the email &#8594;</div>
+        </div>
+      </a>
+
+      <a class="tile" href="get-this-joke/">
+        <div class="cover">
+          <div class="mark">Email</div>
+          <div><div class="star">&#10022;</div><div class="ct">See the Joke or Be the Joke?</div></div>
+          <div class="cd">June 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">June 2026</div>
+          <h3>See the Joke or Be the Joke?</h3>
+          <p>A look at what the last two cycles had in common, and what that says about reading a statement.</p>
+          <div class="go">Read the email &#8594;</div>
+        </div>
+      </a>
+
+      <a class="tile" href="debt-death-spiral.html">
+        <div class="cover">
+          <div class="mark">Email</div>
+          <div><div class="star">&#10022;</div><div class="ct">The Debt<br>Death Spiral</div></div>
+          <div class="cd">May 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">May 2026</div>
+          <h3>The Debt Death Spiral</h3>
+          <p>Ray Dalio and Jamie Dimon on the national debt, and the arithmetic behind twenty-six years of growth.</p>
+          <div class="go">Read the email &#8594;</div>
+        </div>
+      </a>
+
+      <a class="tile" href="how-expensive-is-the-stock-market.html">
+        <div class="cover">
+          <div class="mark">Email</div>
+          <div><div class="star">&#10022;</div><div class="ct">How Expensive Is the Stock Market?</div></div>
+          <div class="cd">May 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">May 2026</div>
+          <h3>How Expensive Is the Stock Market?</h3>
+          <p>What the market cost in May 2026, measured three ways, including one your statement never shows you.</p>
+          <div class="go">Read the email &#8594;</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<div class="kband">
+  <div class="inner">
+    <img src="/images/larry-kudlow-hero-v7-eb9ff777.webp" alt="Larry Kudlow">
+    <div>
+      <div class="q">&ldquo;American Sovereign Bullion is the only company I recommend for physical gold and silver and I don&rsquo;t lend my name to anyone I don&rsquo;t trust.&rdquo;</div>
+      <div class="sig">
+        <div class="n">Larry Kudlow</div>
+        <div class="r">Host of Fox Business Network&rsquo;s &ldquo;Kudlow&rdquo;</div>
+      </div>
+      <div class="ftc">Larry Kudlow is a paid spokesperson for American Sovereign Bullion.</div>
+    </div>
+  </div>
+</div>
+
+<section class="section" id="reports">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow eyebrow--dark">Reports</div>
+      <h2>The Full Analysis</h2>
+      <p>The published reports and reference sheets, in the layout they were designed for.</p>
+    </div>
+
+    <div class="grid grid--wide">
+
+      <a class="tile" href="what-the-market-did.html">
+        <div class="cover">
+          <div class="mark">Reference Sheet</div>
+          <div><div class="star">&#10022;</div><div class="ct">What the Market Did, and How Long It Took to Recover</div></div>
+          <div class="cd">August 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">August 2026 &middot; Reference sheet &middot; PDF &middot; 1 page</div>
+          <h3>What the Market Did, and How Long It Took to Recover</h3>
+          <p>The Dow, the S&amp;P 500, the Nasdaq, and gold at the peak and trough of the last two bear markets, and how many years each index took to get back to even.</p>
+          <div class="go">Read the sheet &#8594;</div>
+        </div>
+      </a>
+
+      <a class="tile" href="where-the-us-keeps-its-gold.html">
+        <div class="cover">
+          <div class="mark">Reference Sheet</div>
+          <div><div class="star">&#10022;</div><div class="ct">Where the United States Keeps Its Gold</div></div>
+          <div class="cd">August 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">August 2026 &middot; Reference sheet &middot; PDF &middot; 1 page</div>
+          <h3>Where the United States Keeps Its Gold</h3>
+          <p>Every ounce of gold the U.S. Treasury reports it owns, vault by vault, carried on the government&rsquo;s books at the 1973 statutory price and priced at today&rsquo;s market.</p>
+          <div class="go">Read the sheet &#8594;</div>
+        </div>
+      </a>
+
+      <a class="tile" href="the-quiet-erosion.html">
+        <div class="cover">
+          <div class="mark">Report</div>
+          <div><div class="star">&#10022;</div><div class="ct">The Quiet Erosion</div></div>
+          <div class="cd">June 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">June 2026 &middot; Report &middot; PDF &middot; 22 pages</div>
+          <h3>The Quiet Erosion</h3>
+          <p>Why your money buys less every year, where the erosion comes from, and what a retirement held entirely in dollars is exposed to.</p>
+          <div class="go">Read the report &#8594;</div>
+        </div>
+      </a>
+
+          </div>
+  </div>
+</section>
+
+<section class="section" id="guides">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow eyebrow--dark">Guides</div>
+      <h2>The Longer Reads</h2>
+      <p>Full-length guides, in the layout they were designed for. Read them here or keep a copy.</p>
+    </div>
+
+    <div class="grid grid--wide">
+
+      <a class="tile" href="ai-wrecked-world.html">
+        <div class="cover">
+          <div class="mark">Guide</div>
+          <div><div class="star">&#10022;</div><div class="ct">A.I. Wrecked World</div></div>
+          <div class="cd">September 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">September 2026 &middot; Guide &middot; PDF &middot; 51 pages</div>
+          <h3>A.I. Wrecked World</h3>
+          <p>What happens to a debt-funded economy when AI starts replacing the workers whose wages and taxes pay for it, and what that could mean for your IRA, 401(k), or TSP.</p>
+          <div class="go">Read the guide &#8594;</div>
+        </div>
+      </a>
+
+      <a class="tile" href="the-2026-silver-report.html">
+        <div class="cover">
+          <div class="mark">Guide</div>
+          <div><div class="star">&#10022;</div><div class="ct">The 2026 Silver Report</div></div>
+          <div class="cd">September 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">September 2026 &middot; Guide &middot; PDF &middot; 43 pages</div>
+          <h3>The 2026 Silver Report</h3>
+          <p>The supply deficit, the AI demand surge, and what it means for physical silver, with a five-step framework for your retirement.</p>
+          <div class="go">Read the guide &#8594;</div>
+        </div>
+      </a>
+
+      <a class="tile" href="the-digital-migration.html">
+        <div class="cover">
+          <div class="mark">Guide</div>
+          <div><div class="star">&#10022;</div><div class="ct">The Digital $4.7 Quadrillion Migration</div></div>
+          <div class="cd">July 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">July 2026 &middot; Guide &middot; PDF &middot; 43 pages</div>
+          <h3>The Digital $4.7 Quadrillion Migration: Stocks to Blockchain</h3>
+          <p>What the DTCC&rsquo;s move to blockchain records could mean for the stocks, bonds, and funds in your retirement accounts, and how physical metal held in your name differs.</p>
+          <div class="go">Read the guide &#8594;</div>
+        </div>
+      </a>
+
+      <a class="tile" href="the-view-through-the-windshield.html">
+        <div class="cover">
+          <div class="mark">Guide</div>
+          <div><div class="star">&#10022;</div><div class="ct">The View Through the Windshield</div></div>
+          <div class="cd">June 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">June 2026 &middot; Guide &middot; PDF &middot; 17 pages</div>
+          <h3>The View Through the Windshield</h3>
+          <p>A time for Goldman Sachs, a time for sacks of gold. The roadmap from 2000 to 2026, the indicators people watch, and what the historical record does and does not tell you.</p>
+          <div class="go">Read the guide &#8594;</div>
+        </div>
+      </a>
+
+      <a class="tile" href="the-dying-dollar.html">
+        <div class="cover">
+          <div class="mark">Guide</div>
+          <div><div class="star">&#10022;</div><div class="ct">The Dying Dollar</div></div>
+          <div class="cd">June 2026</div>
+        </div>
+        <div class="meta">
+          <div class="kicker">June 2026 &middot; Guide &middot; PDF &middot; 29 pages</div>
+          <h3>The Dying Dollar</h3>
+          <p>A plain-spoken look at what has happened to the purchasing power of the dollar, how it happened, and what it means for money you have already saved.</p>
+          <div class="go">Read the guide &#8594;</div>
+        </div>
+      </a>
+
+</div>
+  </div>
+</section>
+
+<footer>
+  <div class="brand">American Sovereign Bullion</div>
+  <div class="info">
+    Physical gold and silver, delivered to your door or held in your name.<br>
+    5301 N. Federal Hwy, Suite 245 &middot; Boca Raton, FL 33487<br>
+    <a href="tel:8442722428">(844) 272-2428</a> &middot; <a href="mailto:info@ASBgold.com">info@ASBgold.com</a>
+  </div>
+  <div class="legal">
+    This material is general in nature and not tailored to the goals of any individual. Purchasing precious metals may carry risk. Prices may rise and fall, so the value of your metals may go up or down over time and you may sell for more or less than you paid. Past performance does not guarantee future results. American Sovereign Bullion and its representatives are precious metals specialists, not licensed financial advisors, and do not give financial, tax, or legal advice.
+  </div>
+</footer>
+
+</body>
+</html>

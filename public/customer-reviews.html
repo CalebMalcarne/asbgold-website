@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) - Google Ads AW-18331539274 + GA4 G-XG9GJEG0RQ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18331539274"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-18331539274');
+gtag('config', 'G-XG9GJEG0RQ');
+</script>
+<meta name="asb-build" content="2026-10-01-01">
+<link rel="icon" href="/favicon-94cf0742.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32-94cf0742.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon-94cf0742.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#10386e">
+<title>Reviews | American Sovereign Bullion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/asb.css">
+<link rel="stylesheet" href="css/asb-pages.css">
+
+<style>
+/* ===== Reviews page ===== */
+
+/* featured quote: navy gradient, contrast text, photo full-height right (no gold frame) */
+.rs-quote{position:relative;overflow:hidden;padding:0}
+.section.navy.rs-quote{background:linear-gradient(180deg,var(--navy-mid) 0%,var(--navy) 52%,var(--navy-deep) 100%)}
+.rs-quote .rs-inner{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:66px 28px}
+.rs-quote .rs-text{max-width:60%}
+.rs-quote .mark{font-family:'Cormorant Garamond',serif;font-size:78px;line-height:.1;color:var(--gold-bright);opacity:.5;display:block;height:44px}
+.rs-quote blockquote{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:clamp(21px,2.7vw,30px);line-height:1.45;color:var(--cream);margin:0}
+.rs-quote .attrib{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:700;font-size:27px;color:var(--gold-bright);margin-top:24px}
+.rs-quote .attrib span{display:block;font-family:'Montserrat',sans-serif;font-style:normal;font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--cream-soft);margin-top:8px}
+.rs-quote .rs-photo{position:absolute;top:0;right:0;bottom:0;width:38%;z-index:1}
+.rs-quote .rs-photo>img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.rs-quote .rs-photo::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--navy) 0%,rgba(10,30,58,.55) 12%,rgba(10,30,58,0) 40%)}
+.rs-quote .rs-photo::after{content:"";position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse 88% 82% at 100% 100%,rgba(6,18,38,.95) 0%,rgba(6,18,38,.6) 32%,rgba(6,18,38,.12) 60%,transparent 74%)}
+.rs-quote .rs-sig{position:absolute;left:24px;right:22px;bottom:22px;z-index:3;text-align:right}
+.rs-quote .rs-emblem{display:block;width:86px;height:auto;margin:0 0 7px auto;filter:drop-shadow(0 4px 12px rgba(0,0,0,.6))}
+.rs-quote .rs-sig-name{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(26px,2.6vw,34px);color:var(--gold-bright);line-height:1}
+.rs-quote .rs-sig-role{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--cream-soft);margin-top:5px}
+
+/* Navy testimonial cards (gradient + gold left bar + internal divider) */
+.rev-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;max-width:1180px;margin:0 auto}
+.rev{position:relative;overflow:hidden;background:linear-gradient(152deg,#1a3a66 0%,var(--navy) 52%,var(--navy-deep) 100%);border:1px solid rgba(201,161,74,.20);border-radius:10px;padding:32px 30px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s,border-color .2s}
+.rev::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 62% 64% at 0% 0%,rgba(201,161,74,.15),transparent 62%)}
+.rev::after{content:"";position:absolute;left:0;top:0;height:100%;width:3px;background:linear-gradient(180deg,var(--gold-bright),var(--gold-deep));opacity:.85}
+.rev>*{position:relative;z-index:1}
+.rev:hover{transform:translateY(-6px);box-shadow:0 16px 38px rgba(6,18,38,.42);border-color:var(--gold)}
+.rev .stars{color:var(--gold-bright);font-size:16px;letter-spacing:3px;margin-bottom:12px}
+.rev h3{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:24px;line-height:1.18;color:var(--cream);margin:0;padding-bottom:16px;border-bottom:1px solid var(--rule)}
+.rev .body{font-size:15.5px;line-height:1.7;color:var(--cream-soft);margin:18px 0 0;flex:1}
+.rev .who{margin-top:22px;padding-top:16px;border-top:1px solid rgba(201,161,74,.18)}
+.rev .name{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:20px;color:var(--cream)}
+.rev .role{font-size:13.5px;letter-spacing:.03em;color:var(--gold-bright);margin-top:3px}
+.rev .loc{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--cream-soft);opacity:.8;margin-top:3px}
+
+/* Lifestyle photo features: fixed (parallax) photo background with a review card overlaid */
+.rev-feature{position:relative;overflow:hidden;display:flex;align-items:center;min-height:clamp(440px,46vw,580px);padding:62px 0;background-size:cover;background-repeat:no-repeat}
+.feat-grandfather{background-image:url(images/customer7-asb.webp);background-position:center 18%}
+.feat-businesswoman{background-image:url(images/customer3-asb.webp);background-position:66% 24%}
+.rev-feature::before{content:"";position:absolute;inset:0;z-index:0}
+.feat-grandfather::before{background:linear-gradient(90deg,rgba(6,18,38,.08) 0%,rgba(6,18,38,.22) 42%,rgba(6,18,38,.74) 100%)}      /* darker on the right */
+.feat-businesswoman::before{background:linear-gradient(90deg,rgba(6,18,38,.76) 0%,rgba(6,18,38,.30) 56%,rgba(6,18,38,.08) 100%)} /* darker on the left */
+.rev-feature .wrap{position:relative;z-index:1;width:100%;display:flex}
+.feat-grandfather .wrap{justify-content:flex-end}
+.feat-businesswoman .wrap{justify-content:flex-start}
+.rev-feature .rev{max-width:460px;width:100%;box-shadow:0 26px 64px rgba(6,18,38,.62)}
+
+/* Final CTA: copy left, coin photo bleeds center-to-right-edge (zoomed, static) */
+.section.navy.reviews-cta{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--navy-mid) 0%,var(--navy) 55%,var(--navy-deep) 100%);padding:0}
+.reviews-cta .cta-inner{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:56px 28px;display:flex;flex-direction:column}
+.reviews-cta .cta-copy{text-align:left;max-width:600px;display:flex;flex-direction:column;gap:52px}
+.reviews-cta .cta-copy .section-head{text-align:left;max-width:none;margin:0}
+.reviews-cta .cta-copy h2{text-align:left}
+.reviews-cta .cta-copy p{text-align:left;margin-top:14px}
+.reviews-cta .cta-lead{font-family:'Montserrat',sans-serif;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-bright);font-weight:700;margin:0 0 8px}
+.cta-phone{display:inline-flex;align-items:center;gap:6px;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(28px,3.4vw,38px);color:var(--gold-bright);text-decoration:none;line-height:1;margin:8px 0 18px}
+.cta-phone .ring-phone{width:2.3em;height:2.3em;margin:0 6px 0 0}
+.reviews-cta .center-cta{justify-content:flex-start;margin-top:4px}
+.reviews-cta .cta-photo{position:absolute;top:0;right:0;bottom:0;left:57%;z-index:0;overflow:hidden}
+.reviews-cta .cta-photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.reviews-cta .cta-photo::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--navy) 0%,rgba(10,30,58,.6) 12%,rgba(10,30,58,0) 36%)}
+
+/* Page testimonial fineprint, third block of the CTA copy */
+.reviews-cta .cta-fineprint{margin:0;max-width:600px;font-size:12px;line-height:1.6;color:rgba(245,239,226,.6)}
+
+@media(max-width:900px){
+  .rev-grid{grid-template-columns:1fr}
+  .rs-quote .rs-text{max-width:none}
+  .rs-quote .rs-photo{position:relative;width:100%;height:340px;margin-top:24px}
+  .rs-quote .rs-photo::before{background:none}
+  /* photo features on mobile: hide photo, show card on navy (option B) */
+  .rev-feature{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);background-attachment:scroll;min-height:0;padding:46px 0}
+  .feat-grandfather,.feat-businesswoman{background-image:none}
+  .rev-feature::before{display:none}
+  .feat-grandfather .wrap,.feat-businesswoman .wrap{justify-content:center}
+  .rev-feature .rev{max-width:560px;width:100%;margin:0 auto;box-shadow:0 18px 44px rgba(6,18,38,.5)}
+  /* CTA stacks: copy then photo */
+  .reviews-cta .cta-inner{gap:24px;text-align:center}
+  .reviews-cta .cta-copy{max-width:none;text-align:center}
+  .reviews-cta .cta-copy .section-head,.reviews-cta .cta-copy h2,.reviews-cta .cta-copy p{text-align:center}
+  .reviews-cta .center-cta{justify-content:center}
+  .reviews-cta .cta-fineprint{max-width:none;text-align:center;margin-left:auto;margin-right:auto}
+  .reviews-cta .cta-photo{position:relative;top:auto;right:auto;bottom:auto;left:auto;width:100%;min-height:300px;margin-top:8px}
+  .reviews-cta .cta-photo::before{display:none}
+}
+</style>
+
+<style>
+/* ===== Larry Kudlow endorsement hero (Reviews) - self-contained, scoped .lk-rev-hero ===== */
+.lk-rev-hero{position:relative;overflow:hidden;color:#f4eede;background:linear-gradient(160deg,#1e4585 0%,#15335f 46%,#102a4f 100%)}
+.lk-rev-hero .lkr-bgvid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42;pointer-events:none}
+.lk-rev-hero .lkr-veil{position:absolute;inset:0;pointer-events:none;background:linear-gradient(178deg,rgba(16,42,79,.46) 0%,rgba(16,42,79,.66) 55%,rgba(16,42,79,.84) 100%)}
+.lk-rev-hero .lkr-wrap{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:.92fr 1.08fr;gap:40px;align-items:center;min-height:520px}
+.lk-rev-hero .lkr-figure{position:relative;height:100%;min-height:480px;overflow:hidden}
+.lk-rev-hero .lkr-photo{position:absolute;inset:0;background:url('images/larry-kudlow-hero.webp') center bottom/contain no-repeat;
+  -webkit-mask-image:linear-gradient(180deg,#000 0,#000 calc(100% - 56px),transparent 100%);
+  mask-image:linear-gradient(180deg,#000 0,#000 calc(100% - 56px),transparent 100%)}
+.lk-rev-hero .lkr-quote-col{align-self:center}
+.lk-rev-hero .lkr-eyebrow{font-family:'Montserrat',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#e8c46b;margin-bottom:20px}
+.lk-rev-hero .lkr-eyebrow .st{color:#e8c46b}
+.lk-rev-hero .lkr-quote{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:clamp(24px,2.6vw,33px);line-height:1.42;color:#f4eede;margin:0 0 26px}
+.lk-rev-hero .lkr-quote .qmark{font-size:42px;color:#e8c46b;vertical-align:-12px;margin-right:3px}
+.lk-rev-hero .lkr-quote .qmark-close{margin-right:0;margin-left:2px}
+.lk-rev-hero .lkr-quote .hl{color:#e8c46b}
+.lk-rev-hero .lkr-sig{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:40px;color:#e8c46b;line-height:1}
+.lk-rev-hero .lkr-role{font-family:'Montserrat',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:#cdd9ea;margin-top:8px}
+.lk-rev-hero .lkr-ftc{font-family:'Montserrat',Arial,sans-serif;font-size:11px;letter-spacing:.3px;color:#9fb2cf;margin-top:18px}
+.lk-rev-hero .lkr-cta{margin-top:24px}
+@media(max-width:820px){
+  .lk-rev-hero .lkr-wrap{grid-template-columns:1fr;gap:18px;padding:34px 18px;min-height:0}
+  .lk-rev-hero .lkr-figure{order:1;min-height:330px;height:330px}
+  .lk-rev-hero .lkr-quote-col{order:2;text-align:center}
+  .lk-rev-hero .lkr-bgvid{opacity:.3}
+  .lk-rev-hero .lkr-quote{font-size:22px}
+}
+</style>
+</head>
+<body id="top">
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="logo" aria-label="American Sovereign Bullion home"><img src="images/asb-logo-light-v1.webp" alt="American Sovereign Bullion" width="1210" height="210"></a>
+    <ul class="nav-menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/gold-ira">Gold IRA</a></li>
+      <li><a href="/customer-reviews" class="active" aria-current="page">Reviews</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== LIVE METALS SPOT TICKER ===== -->
+<div class="asb-ticker" id="asb-ticker" aria-label="Live precious metals spot prices">
+  <span class="tk-spot">Live spot</span>
+  <div class="asb-ticker-track" id="asb-ticker-track">
+    <span class="tk-item"><span class="tk-name">Loading spot prices&hellip;</span></span>
+  </div>
+</div>
+<main id="main">
+<!-- ===== HERO: Larry Kudlow endorsement (paid spokesperson) ===== -->
+<section class="page-hero lk-rev-hero">
+  <video class="lkr-bgvid" autoplay muted loop playsinline preload="auto" poster="images/flag-poster.jpg"><source src="images/flag-bg.webm" type="video/webm"><source src="images/flag-bg.mp4" type="video/mp4"></video>
+  <div class="lkr-veil"></div>
+  <div class="lkr-wrap">
+    <div class="lkr-figure"><div class="lkr-photo"></div></div>
+    <div class="lkr-quote-col">
+      <div class="lkr-eyebrow"><span class="st">&#10022;</span>&nbsp; A Trusted Voice on the American Economy &nbsp;<span class="st">&#10022;</span></div>
+      <p class="lkr-quote"><span class="qmark">&ldquo;</span><span class="hl">American Sovereign Bullion</span> is the only company I recommend for physical gold and silver and I don&rsquo;t lend my name to anyone I don&rsquo;t trust.<span class="qmark qmark-close">&rdquo;</span></p>
+      <div class="lkr-sig">Larry Kudlow</div>
+      <div class="lkr-role">Host of Fox Business Network&rsquo;s &ldquo;Kudlow&rdquo;</div>
+      <div class="lkr-ftc">Larry Kudlow is a paid spokesperson for American Sovereign Bullion.</div>
+      <div class="lkr-cta"><a href="/#claim" class="btn btn-primary">Request Your Free Gold &amp; Silver Kit</a></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip"><div class="trust-inner">
+  <span class="tb-rating"><img src="images/bbb-accredited-horizontal-v3.webp" alt="BBB Accredited Business" class="tb-seal" width="254" height="96"><span class="tb-rtext"><span class="tb-rlabel">BBB Rating: <b>A+</b></span><span class="tb-rdate">As of <span class="bbb-asof">6/23/2026</span></span></span></span>
+  <span class="tb-dot"></span><span class="tb-trust">Built on Trust Since 2009</span>
+</div></div>
+
+<section class="section paper">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow"><span class="st">&#10022;</span>What Our Clients Say<span class="st">&#10022;</span></div>
+      <h2>In Their Own Words</h2>
+      <div class="gold-rule"></div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <h3>I finally understand what it means to own something real</h3>
+        <p class="body">I spent twenty years in tech, stock options, 401(k)s, crypto experiments. I thought I understood money. Then inflation hit and I watched everything I thought was solid start to wobble. A colleague mentioned American Sovereign Bullion and I made the call expecting another sales pitch. Instead I got an education. For the first time in my life, I actually own something I can hold in my hand. That feeling is worth more than the gold itself.</p>
+        <div class="who"><div class="name">David R.</div><div class="role">Software Engineer</div><div class="loc">Austin, Texas</div></div>
+      </div>
+      <div class="rev">
+        <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <h3>They treated my retirement like it was their own</h3>
+        <p class="body">I'm 67 years old. I worked thirty-two years as a postal worker and every dollar in my retirement was earned one delivery at a time. When I called American Sovereign Bullion I was nervous. I don't know Wall Street language and I was afraid of making a mistake. They never made me feel small. They walked me through the Gold IRA process step by step, answered every question twice if I needed it, and made sure I understood exactly what I was doing before I signed anything. That kind of respect is rare.</p>
+        <div class="who"><div class="name">Patricia W.</div><div class="role">Retired Postal Worker</div><div class="loc">Columbus, Ohio</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rev-feature feat-grandfather">
+  <div class="wrap">
+    <div class="rev">
+      <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <h3>This is the conversation I wish I'd had ten years ago</h3>
+      <p class="body">My husband passed two years ago and left me managing our finances alone for the first time. I was overwhelmed and honestly afraid of making a costly mistake. A friend in Phoenix recommended American Sovereign Bullion. The moment I called, I knew this was different. They listened first. They never pushed. They explained clearly what physical gold does, what it does not do, and why it made sense for my situation specifically. I moved a portion of my savings into physical gold and silver and for the first time in two years I feel like my future is protected. I cannot thank this team enough.</p>
+      <div class="who"><div class="name">Eleanor V.</div><div class="role">Retired Accountant</div><div class="loc">Phoenix, Arizona</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section paper-2">
+  <div class="wrap">
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <h3>I thought gold was for wealthy people. I was wrong.</h3>
+        <p class="body">I'm a 44-year-old schoolteacher in the Midwest. I do not have a large portfolio. I was worried that physical gold was only for people with serious money and that I would be laughed off the phone. The specialist at American Sovereign Bullion spent forty minutes with me, no rush, explaining how I could start small and build consistently through their subscription plan. I own three ounces of physical silver now. It is not a fortune. But it is mine, and nothing can inflate it away.</p>
+        <div class="who"><div class="name">Christine B.</div><div class="role">Elementary School Teacher</div><div class="loc">Kansas City, Missouri</div></div>
+      </div>
+      <div class="rev">
+        <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <h3>Moved my entire 401(k) rollover and never looked back</h3>
+        <p class="body">After twenty-five years in the military I came home with a retirement account and no idea how to protect it in a civilian economy. A fellow veteran pointed me toward American Sovereign Bullion. From the first call to the final delivery, the process was clean, professional, and completely transparent. My rollover was handled without a single tax penalty. My metals are held in my name in audited storage. I check the balance every quarter and every quarter I am glad I made this decision.</p>
+        <div class="who"><div class="name">Marcus T.</div><div class="role">U.S. Army Veteran, Retired</div><div class="loc">San Antonio, Texas</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rev-feature feat-businesswoman">
+  <div class="wrap">
+    <div class="rev">
+      <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <h3>The only company that gave me a straight answer</h3>
+      <p class="body">I called four precious metals dealers before I called American Sovereign Bullion. The first three gave me scripts. American Sovereign Bullion gave me facts, the actual numbers, the actual process, the actual risks. No sugar-coating, no pressure, no upsell. I transferred part of my IRA within ten days. When my metals arrived fully insured and exactly as described, I referred my brother the same afternoon. This is what a trustworthy company looks like.</p>
+      <div class="who"><div class="name">Kevin M.</div><div class="role">General Contractor</div><div class="loc">Nashville, Tennessee</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section navy reviews-cta">
+  <div class="cta-inner">
+    <div class="cta-copy">
+      <div class="section-head">
+        <h2>Join thousands of Americans who made the change.</h2>
+        <div class="gold-rule"></div>
+        <p>Speak with our team today. No pressure, no sales scripts, just honest guidance on protecting your wealth with physical gold.</p>
+      </div>
+      <div class="cta-gold">
+        <div class="cta-lead">Speak with a Specialist</div>
+        <a class="cta-phone" href="tel:8442722428"><span class="ring-phone" aria-hidden="true"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="rpGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--gold-bright)"/><stop offset="55%" stop-color="var(--gold)"/><stop offset="100%" stop-color="var(--gold-deep)"/></linearGradient></defs><g fill="none" stroke="url(#rpGold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><g class="rp-wave rp-w1"><path d="M40.58 18.51 A8 8 0 0 1 48.99 26.92"/></g><g class="rp-wave rp-w2"><path d="M40.37 14.52 A12 12 0 0 1 52.98 27.13"/></g><g class="rp-wave rp-w3"><path d="M40.16 10.52 A16 16 0 0 1 56.98 27.34"/></g><g class="rp-body"><rect x="25" y="14" width="14" height="36" rx="3.5"/><line x1="30" y1="18.5" x2="34" y2="18.5"/><line x1="31" y1="45.5" x2="33" y2="45.5"/></g></g></svg></span>(844) 272-2428</a>
+        <div class="center-cta">
+          <a href="/#claim" class="btn btn-primary">Request Your Free Gold &amp; Silver Guide</a>
+        </div>
+      </div>
+      <p class="cta-fineprint">Testimonials from verified clients of American Sovereign Bullion LLC. Individual results and experiences may vary. The purchase of precious metals involves risk. This page does not constitute investment advice. American Sovereign Bullion LLC, 5301 N. Federal Highway, Suite #245, Boca Raton, FL 33487.</p>
+    </div>
+  </div>
+  <div class="cta-photo"><img src="images/hand-coin-cta.webp" alt="Hands holding an American Sovereign Bullion gold coin" width="1000" height="1000"></div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/asb-logo-light-v1.webp" alt="American Sovereign Bullion" class="flogo" width="1210" height="210" loading="lazy">
+        <p>Physical precious metals delivered to your door or held in your name.</p>
+        <div class="tagline">Built on Trust Since 2009</div>
+        <span class="footer-bbb"><img src="images/bbb-accredited-horizontal-v3.webp" alt="BBB Accredited Business" width="254" height="96" loading="lazy"><span class="fbb-rtext"><span class="fbb-rlabel">BBB Rating: <b>A+</b></span><span class="fbb-rdate">As of <span class="bbb-asof">6/23/2026</span></span></span></span>
+      </div>
+      <div><h4>Built on Trust</h4><ul><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/customer-reviews">Reviews</a></li></ul></div>
+      <div><h4>Make Your Move</h4><ul><li><a href="/services">Services</a></li><li><a href="/gold-ira">Gold IRA</a></li><li><a href="/contact">Contact Us</a></li></ul></div>
+      <div><h4>Go Deeper</h4><ul><li><a href="/terms-of-use">Terms of Use</a></li><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/publications">Company Publications</a></li></ul></div>
+      <div class="footer-contact"><h4>Always Available</h4>
+        <div class="blk"><a href="mailto:info@ASBgold.com">info@ASBgold.com</a></div>
+        <div class="blk"><a href="tel:8442722428">(844) 272-2428</a></div>
+        <div class="blk">Mon&ndash;Fri 9AM&ndash;6PM<br>Saturday 11AM&ndash;2PM EST</div>
+        <div class="blk">5301 N. Federal Hwy, Suite 245<br>Boca Raton, FL 33487</div>
+      </div>
+    </div>
+    <p class="footer-fine">This site is general in nature and not tailored to the specific goals of any individual. Purchasing precious metals may carry risk. Prices may rise and fall, which means the value of your metals may go up or down over time and you may sell for more or less than you paid. Past performance does not guarantee future results. Commodities involve risk and are not suitable for all investors. American Sovereign Bullion and its representatives are precious metals specialists, not licensed financial advisors, and do not give financial, tax, or legal advice. Customer comments are from actual clients of American Sovereign Bullion and are used with their permission. Individual experiences vary and are not a guarantee of future results. Photographs accompanying customer comments are illustrative and do not depict the individuals quoted.</p>
+    <div class="footer-bottom">
+      <div>&copy; 2026 American Sovereign Bullion. All Rights Reserved.</div>
+    </div>
+  </div>
+</footer>
+<script src="js/asb.js" defer></script>
+</body>
+</html>
